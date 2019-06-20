@@ -1,64 +1,13 @@
 .home {
 
-    .logo {
-        border: solid 5px $color3;
-        height: 100px;
-        width: 200px;
-        display: flex;
-        font-size: 3rem;
-        line-height: 1;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Eagle Lake', cursive;
-
-
-        span {
-            transform: rotate(10deg);
-        }
-    }
-
     .info-area {
         padding: 56px;
         width: 35%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-
-        .info-box {
-            position: absolute;
-            bottom: 60px;
-
-            h4 {
-                font-size: 1.2rem;
-                color: $color3;
-                margin: 0.7rem 0;
-            }
-
-            p {
-                font-size: 0.9rem;
-                font-weight: 300;
-                color: $color3;
-                margin: 0.7rem 0 1.6rem;
-            }
-        }
-
-        .icon-area {
-            a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.5rem;
-                padding: 0 5px;
-                &:first-child {
-                    padding: 0 5px 0 0;
-                }
-            }
-        }
     }
 
     .content-area {
         margin-left: 35%;
-        background: white;
+        background: $color3;
         width: 65%;
         height: 100%;
 
@@ -80,6 +29,9 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
+                -webkit-box-shadow: 9px 20px 74px 7px rgba(15,28,168,0.47);
+                -moz-box-shadow: 9px 20px 74px 7px rgba(15,28,168,0.47);
+                box-shadow: 9px 20px 74px 7px rgba(15,28,168,0.47);
             }
         }
         .profile-section {
