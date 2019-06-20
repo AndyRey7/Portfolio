@@ -42,9 +42,17 @@ table {
   border-spacing: 0; }
 
 .home .logo {
-  background: white;
+  border: solid 5px #fefefe;
   height: 100px;
-  width: 200px; }
+  width: 200px;
+  display: flex;
+  font-size: 3rem;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Eagle Lake', cursive; }
+  .home .logo span {
+    transform: rotate(10deg); }
 
 .home .info-area {
   padding: 56px;
@@ -65,6 +73,13 @@ table {
       font-weight: 300;
       color: #fefefe;
       margin: 0.7rem 0 1.6rem; }
+  .home .info-area .icon-area a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 5px; }
+    .home .info-area .icon-area a:first-child {
+      padding: 0 5px 0 0; }
 
 .home .content-area {
   margin-left: 35%;
@@ -118,12 +133,13 @@ html, body {
   font-family: 'Rasa', sans-serif;
   height: 100%; }
 
-.menu {
+.menu-icon {
   position: fixed;
   right: 36px;
   top: 36px;
-  padding: 20px; }
-  .menu .fa {
+  padding: 20px;
+  z-index: 11; }
+  .menu-icon .fa {
     font-size: 2rem;
     color: #4f42ff; }
 
@@ -151,6 +167,40 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-left: 25px; }
+
+#menu {
+  background: #4f42ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: #fefefe; }
+      #menu nav a:hover {
+        color: #bdbdbd; }
+
+.menu-active .menu-icon .fa {
+  color: #fefefe; }
+
+.menu-active #menu {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0); }
 
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
