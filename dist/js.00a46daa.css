@@ -176,6 +176,97 @@ table {
           .resume .content-area .category .xp-section .xp-box p:first-of-type {
             text-transform: uppercase; }
 
+.portfolio .info-area {
+  width: 20%; }
+
+.portfolio .content-area {
+  margin-left: 20%;
+  background: #fefefe;
+  width: 80%;
+  height: 100%;
+  padding: 56px;
+  overflow-y: scroll; }
+  .portfolio .content-area .project-section {
+    margin-bottom: 56px; }
+    .portfolio .content-area .project-section h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 56px; }
+    .portfolio .content-area .project-section .project-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .portfolio .content-area .project-section .project-container .project-card {
+        position: relative;
+        background: url(/example.1b3e09bc.jpg) no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 400px;
+        padding: 30px;
+        transition: all .5s ease-in-out;
+        cursor: pointer; }
+        .portfolio .content-area .project-section .project-container .project-card:hover {
+          -webkit-box-shadow: 0px 20px 20px 2px rgba(15, 28, 0, 0.12);
+          -moz-box-shadow: 0px 20px 20px 2px rgba(15, 28, 0, 0.12);
+          box-shadow: 0px 20px 20px 2px rgba(15, 28, 0, 0.12); }
+        .portfolio .content-area .project-section .project-container .project-card .grey-bg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #efefef;
+          opacity: 0;
+          transition: all .3s ease-in-out;
+          overflow: hidden; }
+          .portfolio .content-area .project-section .project-container .project-card .grey-bg:hover {
+            opacity: 0.9; }
+            .portfolio .content-area .project-section .project-container .project-card .grey-bg:hover .project-info .project-detail {
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
+            .portfolio .content-area .project-section .project-container .project-card .grey-bg:hover .project-info .project-title {
+              transform: translate3d(0, 0, 0);
+              opacity: 1; }
+          .portfolio .content-area .project-section .project-container .project-card .grey-bg .project-info {
+            padding: 56px;
+            position: absolute;
+            bottom: 0;
+            width: 100%; }
+            .portfolio .content-area .project-section .project-container .project-card .grey-bg .project-info .project-detail {
+              position: relative;
+              font-size: 1.1rem;
+              text-transform: capitalize;
+              margin: 0 0 1rem;
+              transform: translate3d(-200px, 0, 0);
+              opacity: 0;
+              transition: all .3s ease-in-out; }
+            .portfolio .content-area .project-section .project-container .project-card .grey-bg .project-info .project-title {
+              position: relative;
+              font-size: 1.8rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              transform: translate3d(-100px, 0, 0);
+              opacity: 0;
+              transition: all .3s ease-in-out .1s; }
+            .portfolio .content-area .project-section .project-container .project-card .grey-bg .project-info .fa-long-arrow-alt-right {
+              position: absolute;
+              bottom: 56px;
+              right: 56px;
+              font-size: 3rem; }
+        .portfolio .content-area .project-section .project-container .project-card h5 {
+          font-weight: 500;
+          font-size: 1.3rem;
+          margin-bottom: 1.3rem;
+          text-transform: uppercase; }
+        .portfolio .content-area .project-section .project-container .project-card p {
+          font-weight: 300;
+          font-size: 1rem;
+          margin-top: 0.5rem; }
+          .portfolio .content-area .project-section .project-container .project-card p:first-of-type {
+            text-transform: uppercase; }
+
 * {
   box-sizing: border-box; }
 
