@@ -9,7 +9,7 @@
         margin-left: 35%;
         background: $color3;
         width: 65%;
-        height: 100%;
+        height: 150vh;
 
         .img-container {
             display: inline-block;
@@ -24,7 +24,7 @@
                 top: 100px;
                 width: 300px;
                 height: calc( 100% - 200px);
-                background: url(../img/example.jpg) no-repeat center center ;
+                background: url(../img/happyprofilecopy.jpg) no-repeat center center ;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -48,6 +48,7 @@
                     margin: 0 0 1rem 0;
                     span {
                         color: $color1;
+
                     }
                 }
                 h5 {
@@ -60,6 +61,98 @@
                     line-height: 1.4;
                     margin: 0 0 2rem 0;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .home {
+
+        .menu-icon {
+            top:0;
+            right: 0;
+
+            .fa {
+                color:$color3;
+            }
+        }
+
+    
+
+        .info-area {
+            padding: 10px 20px;
+            position: static;
+            .info-box {
+                display: none;
+            }
+             .logo {
+                 height: 50px;
+                 width: 70px;
+                 a {
+                     font-size: 1.2rem;
+                 }
+             }
+        }
+        .content-area {
+            margin-left: 0;
+            width:100%;
+
+
+
+            .img-container {
+
+                padding: 56px 20px 0;
+
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float:right;
+
+                .primary-btn {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+ }
+@media (min-width: 768px) and (max-width:1122px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float:right;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1123px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+
             }
         }
     }

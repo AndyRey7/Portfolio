@@ -62,3 +62,123 @@
         }
     }
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .resume {
+
+        .menu-icon {
+            top:-3px;
+            right: 20px;
+
+            .fa {
+                color:$color3;
+            }
+        }
+
+        .content-area {
+
+            height: auto !important;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        }
+
+        .info-area {
+            padding: 10px 20px;
+            position: static;
+            .info-box {
+                display: none;
+            }
+            .logo {
+                 height: 50px;
+                 width: 70px;
+                 a {
+                     font-size: 1.2rem;
+                 }
+             }
+        }
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+
+
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .img-container {
+                width: 100%;
+                padding: 56px 20px 0;
+                height: auto;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float:right;
+
+                .primary-btn {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+ }
+@media (min-width: 768px) and (max-width:1280px) {
+    .resume {
+
+        .info-area {
+            .logo {
+                height: 80px;
+                width: 130px;
+                
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 70%;
+                float:right;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1123px) {
+    .resume {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+
+            }
+        }
+    }
+}

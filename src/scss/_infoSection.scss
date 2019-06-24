@@ -10,8 +10,10 @@
     font-family: 'Eagle Lake', cursive;
 
 
-    span {
+    a {
         transform: rotate(10deg);
+        text-decoration: none;
+        color: $color2;
     }
 }
 

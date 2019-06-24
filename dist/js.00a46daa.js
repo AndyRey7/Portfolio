@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../img/example.jpg":[["example.1b3e09bc.jpg","img/example.jpg"],"img/example.jpg"],"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./../img/happyprofilecopy.jpg":[["happyprofilecopy.e6ba5039.jpg","img/happyprofilecopy.jpg"],"img/happyprofilecopy.jpg"],"./../img/wanderlust.png":[["wanderlust.29083636.png","img/wanderlust.png"],"img/wanderlust.png"],"./../img/backcountrytrails.png":[["backcountrytrails.07f2e555.png","img/backcountrytrails.png"],"img/backcountrytrails.png"],"./../img/meteroid.png":[["meteroid.7dd5cc74.png","img/meteroid.png"],"img/meteroid.png"],"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55054" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55760" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
