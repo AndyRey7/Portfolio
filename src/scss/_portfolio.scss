@@ -8,9 +8,9 @@
         margin-left: 20%;
         background: $color3;
         width: 80%;
-        height: 100%;
+        height: 100vh;
         padding: 56px;
-        overflow-y: scroll;
+        overflow: auto;
 
         .project-section {
             margin-bottom: 56px;
@@ -27,6 +27,7 @@
                 grid-template-columns: 1fr 1fr;
 
                 .project-card-1 {
+
                     position:relative;
                     background: url(../img/wanderlust.png) no-repeat center center;
                     -webkit-background-size: cover;
@@ -188,7 +189,7 @@
                 }
                 .project-card-3 {
                     position:relative;
-                    background: url(../img/meteroid.png) no-repeat center center;
+                    background: url(../img/meteroidss.png) no-repeat center center;
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
@@ -268,7 +269,7 @@
                 }
                 .project-card-4 {
                     position:relative;
-                    background: url(../img/wanderlust.png) no-repeat center center;
+                    background: url('https://www.indiewire.com/wp-content/uploads/2017/10/matrix-code.jpg?resize=960,540') no-repeat center center;
                     -webkit-background-size: cover;
                     -moz-background-size: cover;
                     -o-background-size: cover;
@@ -350,8 +351,10 @@
         }
     }
 }
+//phone
 
-@media (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
+
     .portfolio {
 
         .menu-icon {
@@ -380,71 +383,110 @@
         .content-area {
             margin-left: 0;
             width:100%;
+            height: auto;
+            overflow: auto;
+            .project-section {
+                width: 100%;
 
-            .img-container {
-                padding: 56px 20px 0;
+                .project-container {
+                    grid-template-columns: 1fr;
 
-                .user-img {
-                    position: static;
-                    width: 100%;
-                }
-            }
-            .profile-section {
-                width: 70%;
-                float:right;
-
-                .primary-btn {
-                    padding: 15px;
+                    .project-card-1 {
+                        margin: 5px;
+                    }
+                    .project-card-2 {
+                        margin: 5px;
+                    }
+                    .project-card-3 {
+                        margin: 5px;
+                    }
+                    .project-card-4 {
+                        margin: 5px;
+                    }
                 }
             }
         }
     }
  }
-@media (min-width: 768px) and (max-width:1280px) {
+
+//laptops
+@media (min-width: 768px) and (max-width:970px) {
     .portfolio {
 
-        .info-area {
-            .logo {
-                height: 80px;
-                width: 130px;
+        .menu-icon {
+            top:0;
+            right: 0;
 
-                a {
-                    font-size: 1.5rem;
-                }
+            .fa {
+                color:$color3;
             }
+        }
+
+        .info-area {
+            padding: 10px 20px;
+            position: static;
+            .info-box {
+                display: none;
+            }
+             .logo {
+                 height: 50px;
+                 width: 70px;
+                 a {
+                     font-size: 1.2rem;
+                 }
+             }
         }
 
         .content-area {
-            .img-container {
-                padding: 56px 20px 0;
+                margin-left: 0;
+                width:100%;
+                height: auto;
+                overflow: auto;
 
-                .user-img {
+                .project-section {
                     width: 100%;
-                }
-            }
-            .profile-section {
-                width: 70%;
-                float:right;
 
-            }
+                    .project-container {
+                        grid-template-columns: 1fr;
+
+                        .project-card-1 {
+                            margin: 5px;
+                        }
+                        .project-card-2 {
+                            margin: 5px;
+                        }
+                        .project-card-3 {
+                            margin: 5px;
+                        }
+                        .project-card-4 {
+                            margin: 5px;
+                        }
+                    }
+                }
         }
+    }
+}
+@media (min-width: 971px) and (max-width:1279px) {
+    .portfolio {
+
+
+        .info-area {
+             .logo {
+                 height: 90px;
+                 width: 150px;
+                 a {
+                     font-size: 2.0rem;
+                 }
+             }
+        }
+
     }
 }
 
 @media (min-width: 1123px) {
     .portfolio {
         .content-area {
-            .img-container {
-                padding: 56px 20px 0;
 
-                .user-img {
-                    width: 100%;
-                }
-            }
-            .profile-section {
-                width: 70%;
-
-            }
         }
     }
 }

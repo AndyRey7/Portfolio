@@ -105,7 +105,7 @@ table {
       left: -100px;
       top: 100px;
       width: 300px;
-      height: calc( 100% - 200px);
+      height: calc( 100vh - 200px);
       background: url(/happyprofilecopy.e6ba5039.jpg) no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -189,9 +189,8 @@ table {
   margin-left: 20%;
   background: #fefefe;
   width: 80%;
-  height: 100%;
-  padding: 56px;
-  overflow-y: scroll; }
+  height: auto;
+  padding: 56px; }
   .resume .content-area .category {
     margin-bottom: 56px; }
     .resume .content-area .category h1 {
@@ -254,40 +253,20 @@ table {
       content: "";
       display: table;
       clear: both; }
-    .resume .content-area .img-container {
-      width: 100%;
-      padding: 56px 20px 0;
-      height: auto; }
-      .resume .content-area .img-container .user-img {
-        position: static;
-        width: 100%; }
-    .resume .content-area .profile-section {
-      width: 70%;
-      float: right; }
-      .resume .content-area .profile-section .primary-btn {
-        padding: 15px; } }
+    .resume .content-area .category {
+      width: 100%; }
+      .resume .content-area .category .xp-section {
+        grid-template-columns: 1fr; } }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1294px) {
   .resume .info-area .logo {
     height: 80px;
     width: 130px; }
     .resume .info-area .logo a {
       font-size: 1.5rem; }
-  .resume .content-area .img-container {
-    padding: 56px 20px 0; }
-    .resume .content-area .img-container .user-img {
-      width: 100%; }
-  .resume .content-area .profile-section {
+  .resume .content-area {
     width: 70%;
     float: right; } }
-
-@media (min-width: 1123px) {
-  .resume .content-area .img-container {
-    padding: 56px 20px 0; }
-    .resume .content-area .img-container .user-img {
-      width: 100%; }
-  .resume .content-area .profile-section {
-    width: 70%; } }
 
 .portfolio .info-area {
   width: 20%; }
@@ -296,9 +275,9 @@ table {
   margin-left: 20%;
   background: #fefefe;
   width: 80%;
-  height: 100%;
+  height: 100vh;
   padding: 56px;
-  overflow-y: scroll; }
+  overflow: auto; }
   .portfolio .content-area .project-section {
     margin-bottom: 56px; }
     .portfolio .content-area .project-section h1 {
@@ -429,7 +408,7 @@ table {
               font-size: 3rem; }
       .portfolio .content-area .project-section .project-container .project-card-3 {
         position: relative;
-        background: url(/meteroid.7dd5cc74.png) no-repeat center center;
+        background: url(/meteroidss.15b7e39a.png) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -488,7 +467,7 @@ table {
               font-size: 3rem; }
       .portfolio .content-area .project-section .project-container .project-card-4 {
         position: relative;
-        background: url(/wanderlust.29083636.png) no-repeat center center;
+        background: url("https://www.indiewire.com/wp-content/uploads/2017/10/matrix-code.jpg?resize=960,540") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -546,7 +525,7 @@ table {
               right: 56px;
               font-size: 3rem; }
 
-@media (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .portfolio .menu-icon {
     top: 0;
     right: 0; }
@@ -564,39 +543,62 @@ table {
         font-size: 1.2rem; }
   .portfolio .content-area {
     margin-left: 0;
-    width: 100%; }
-    .portfolio .content-area .img-container {
-      padding: 56px 20px 0; }
-      .portfolio .content-area .img-container .user-img {
-        position: static;
-        width: 100%; }
-    .portfolio .content-area .profile-section {
-      width: 70%;
-      float: right; }
-      .portfolio .content-area .profile-section .primary-btn {
-        padding: 15px; } }
+    width: 100%;
+    height: auto;
+    overflow: auto; }
+    .portfolio .content-area .project-section {
+      width: 100%; }
+      .portfolio .content-area .project-section .project-container {
+        grid-template-columns: 1fr; }
+        .portfolio .content-area .project-section .project-container .project-card-1 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-2 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-3 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-4 {
+          margin: 5px; } }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 970px) {
+  .portfolio .menu-icon {
+    top: 0;
+    right: 0; }
+    .portfolio .menu-icon .fa {
+      color: #fefefe; }
+  .portfolio .info-area {
+    padding: 10px 20px;
+    position: static; }
+    .portfolio .info-area .info-box {
+      display: none; }
+    .portfolio .info-area .logo {
+      height: 50px;
+      width: 70px; }
+      .portfolio .info-area .logo a {
+        font-size: 1.2rem; }
+  .portfolio .content-area {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    overflow: auto; }
+    .portfolio .content-area .project-section {
+      width: 100%; }
+      .portfolio .content-area .project-section .project-container {
+        grid-template-columns: 1fr; }
+        .portfolio .content-area .project-section .project-container .project-card-1 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-2 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-3 {
+          margin: 5px; }
+        .portfolio .content-area .project-section .project-container .project-card-4 {
+          margin: 5px; } }
+
+@media (min-width: 971px) and (max-width: 1279px) {
   .portfolio .info-area .logo {
-    height: 80px;
-    width: 130px; }
+    height: 90px;
+    width: 150px; }
     .portfolio .info-area .logo a {
-      font-size: 1.5rem; }
-  .portfolio .content-area .img-container {
-    padding: 56px 20px 0; }
-    .portfolio .content-area .img-container .user-img {
-      width: 100%; }
-  .portfolio .content-area .profile-section {
-    width: 70%;
-    float: right; } }
-
-@media (min-width: 1123px) {
-  .portfolio .content-area .img-container {
-    padding: 56px 20px 0; }
-    .portfolio .content-area .img-container .user-img {
-      width: 100%; }
-  .portfolio .content-area .profile-section {
-    width: 70%; } }
+      font-size: 2.0rem; } }
 
 * {
   box-sizing: border-box; }
