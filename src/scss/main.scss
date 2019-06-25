@@ -30,7 +30,12 @@ html, body {
 
     }
 }
-
+.profile {
+    a {
+        text-decoration: none;
+        color: $color2;
+    }
+}
 .primary-btn {
     text-decoration: none;
     background: $color1;
@@ -38,7 +43,6 @@ html, body {
     -moz-border-radius: 30px;
     border-radius: 30px;
     text-align: center;
-    color: $color2;
     padding: 15px 30px;
     display: inline-block;
     text-transform: uppercase;
@@ -106,14 +110,24 @@ html, body {
 
     .menu-icon {
         .fa {
-            color: $color3;
+            color: black;
         }
     }
 
     #menu {
         width: 100%;
-        top: 0;
-        bottom: 0;
+        text-align: center;
         transform: translate3d(0, 0, 0);
     }
+}
+
+.home {
+    .dropdown {
+        button {
+            color: blue;
+        }
+        align-items: center;
+        color: blue
+    }
+
 }
